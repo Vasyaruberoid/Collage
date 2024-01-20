@@ -7,8 +7,38 @@
     <link rel="stylesheet" href='/style.css'>
 </head>
 <body>
-  <div class="colage"></div>
-  
-</body>
-<script type="module" src="/index.js"></script>
+
+  <div id="collage"></div>
+  <div id="fullscreen-overlay">
+    <img id="fullscreen-image" src="" alt="Fullscreen Image">
+    <div id="buttons">
+      <button id="close-button">Закрыть</button>
+      <a id="download-button" download>Скачать</a>
+    </div>
+  </div>
+
+  <table id="userTable">
+    <thead>
+      <tr>
+        <th id="idHeader">ID</th>
+        <th id="loginHeader">Login</th>
+        <th id="emailHeader">Email</th>
+        <th id="nameHeader">Name</th>
+        <th id="birthDateHeader">Birth Date</th>
+        <th id="heightHeader">Height</th>
+        <th id="ipAddressHeader">IP Address</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+    
+  <div id="sidePanel">
+    <span id="closeBtn" onclick="closeSidePanel()">×</span>
+    <h2 id="postTitle"></h2>
+    <p id="postText"></p>
+  </div>
+
+
+    <script src="index.js"></script>
+    </body>
 </html>
